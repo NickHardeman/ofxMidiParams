@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<midiparams>
+	<param paramName="Pad1" group="Pad_Params" midiid="560" displayName="DP 5" />
+	<param paramName="Pad2" group="Pad_Params" midiid="561" displayName="DP 6" />
+	<param paramName="Pad3" group="Pad_Params" midiid="562" displayName="DP 7" />
+	<param paramName="Pad4" group="Pad_Params" midiid="563" displayName="DP 8" />
+	<param paramName="Pad5" group="Pad_Params" midiid="556" displayName="DP 1" />
+	<param paramName="Pad6" group="Pad_Params" midiid="557" displayName="DP 2" />
+	<param paramName="Pad7" group="Pad_Params" midiid="558" displayName="DP 3" />
+	<param paramName="Pad8" group="Pad_Params" midiid="559" displayName="DP 4" />
+	<param paramName="K1" group="group" midiid="1" displayName="Control1" />
+	<param paramName="K2" group="group" midiid="2" displayName="Control2" />
+	<param paramName="K3" group="group" midiid="3" displayName="Control3" />
+	<param paramName="K4" group="group" midiid="4" displayName="Control4" />
+	<param paramName="K5" group="group" midiid="5" displayName="Control5" />
+	<param paramName="K6" group="group" midiid="6" displayName="Control6" />
+	<param paramName="K7" group="group" midiid="7" displayName="Control7" />
+	<param paramName="K8" group="group" midiid="8" displayName="Control8" />
+</midiparams>

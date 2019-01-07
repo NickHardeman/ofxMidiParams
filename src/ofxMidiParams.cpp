@@ -130,6 +130,7 @@ bool ofxMidiParams::load( string aXmlFilepath) {
                 }
             }
         }
+        return true;
     }
     ofLogError() << "Couldn't load xml file from " << mXmlFilePath;
     return false;
