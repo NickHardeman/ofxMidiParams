@@ -32,6 +32,10 @@ void ofApp::setup(){
 //    mMidiParams.add( k3 );
     mMidiParams.setPosition( ofGetWidth()-320, 20 );
     
+    // to connect incoming MIDI to ofParameters passed into mMidiParams,
+    // click on the parameter listed in the mMidiParams gui and
+    // the next MIDI message will be used for mapping to that parameter.
+    
     mMidiParams.load("example-midi-params.xml");
 }
 
