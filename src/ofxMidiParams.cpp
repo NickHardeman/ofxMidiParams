@@ -30,6 +30,11 @@ bool ofxMidiParams::connect( int aport, bool abRetryConnection ) {
     // print input ports to console
     midiIn.listInPorts();
     
+    if( !bHasUpdateEvent) {
+        ofAddListener( ofEvents().update, this, &ofxMidiParams::update );
+    }
+    bHasUpdateEvent = true;
+    
     vector<string> tportNames = midiIn.getInPortList();
     if( aport < 0 || aport >= tportNames.size() ) {
         ofLogNotice( "ofxMidiParams :: connect : port " ) << aport << " is out of range.";
@@ -48,11 +53,6 @@ bool ofxMidiParams::connect( int aport, bool abRetryConnection ) {
     // don't ignore sysex, timing, & active sense messages,
     // these are ignored by default
     midiIn.ignoreTypes(false, false, false);
-    
-    if( !bHasUpdateEvent ) {
-        ofAddListener( ofEvents().update, this, &ofxMidiParams::update );
-    }
-    bHasUpdateEvent = true;
     
     // add ofApp as a listener
     if(bConnected) midiIn.addListener(this);
